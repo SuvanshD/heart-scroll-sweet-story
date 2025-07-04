@@ -11,6 +11,12 @@ const Index = () => {
 
   const handleStart = () => {
     setShowTimeline(true);
+    
+    // Start playing music
+    if (audioRef.current) {
+      audioRef.current.play().catch(console.log);
+    }
+    
     // Smooth scroll to timeline
     setTimeout(() => {
       window.scrollTo({
@@ -33,15 +39,17 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Background music - placeholder for now */}
+      {/* Background music */}
       <audio 
         ref={audioRef}
         loop
         onPlay={() => setIsMusicPlaying(true)}
         onPause={() => setIsMusicPlaying(false)}
       >
-        {/* Add your music file path here */}
-        {/* <source src="/music/romantic-bg.mp3" type="audio/mpeg" /> */}
+        <source src="https://www.soundjay.com/misc/sounds/romantic-piano.mp3" type="audio/mpeg" />
+        <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mpeg" />
+        {/* Fallback for browsers that don't support the audio element */}
+        Your browser does not support the audio element.
       </audio>
 
       <LandingScreen onStart={handleStart} />

@@ -6,6 +6,7 @@ export interface LoveStoryMoment {
   image: string;
   story: string;
   emoji?: string;
+  audioTrack?: string; // Optional audio track for this moment
 }
 
 export const loveStoryData: LoveStoryMoment[] = [
@@ -23,7 +24,8 @@ export const loveStoryData: LoveStoryMoment[] = [
     date: "August 2022",
     image: "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?w=400&h=300&fit=crop",
     story: "Under the starlit sky, we talked for hours. Time stood still as I got lost in your eyes and realized I wanted to spend every moment getting to know you better.",
-    emoji: "✨"
+    emoji: "✨",
+    audioTrack: "https://www.soundjay.com/misc/sounds/starlight-melody.mp3"
   },
   {
     id: "3",
@@ -39,7 +41,8 @@ export const loveStoryData: LoveStoryMoment[] = [
     date: "December 2022",
     image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=400&h=300&fit=crop",
     story: "Three little words that held the weight of my entire heart. The way your face lit up when I said them made me fall even deeper in love with you.",
-    emoji: "❤️"
+    emoji: "❤️",
+    audioTrack: "https://www.bensound.com/bensound-music/bensound-love.mp3"
   },
   {
     id: "5",

@@ -17,13 +17,13 @@ const LandingScreen = ({ onStart }: LandingScreenProps) => {
         {[...Array(15)].map((_, i) => (
           <Heart
             key={i}
-            className={`absolute text-romantic-blush/20 animate-heart-float`}
+            className={`absolute text-romantic-blush/15 animate-heart-float`}
             size={Math.random() * 20 + 10}
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 3}s`,
-              animationDuration: `${3 + Math.random() * 2}s`
+              animationDelay: `${Math.random() * 5}s`,
+              animationDuration: `${5 + Math.random() * 3}s`
             }}
           />
         ))}

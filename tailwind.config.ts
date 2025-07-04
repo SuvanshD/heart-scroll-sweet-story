@@ -109,10 +109,12 @@ export default {
 				},
 				'heart-float': {
 					'0%, 100%': {
-						transform: 'translateY(0px) rotate(0deg)'
+						transform: 'translateY(0px) rotate(0deg)',
+						opacity: '0.3'
 					},
 					'50%': {
-						transform: 'translateY(-10px) rotate(5deg)'
+						transform: 'translateY(-15px) rotate(3deg)',
+						opacity: '0.8'
 					}
 				},
 				'sparkle': {
@@ -130,7 +132,7 @@ export default {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.6s ease-out',
-				'heart-float': 'heart-float 3s ease-in-out infinite',
+				'heart-float': 'heart-float 6s ease-in-out infinite',
 				'sparkle': 'sparkle 2s ease-in-out infinite'
 			}
 		}

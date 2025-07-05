@@ -16,11 +16,11 @@ export const loveStoryData: LoveStoryMoment[] = [
   // 2022 - The Beginning of Our Love Story
   {
     id: "1",
-    title: "The First Hello",
+    title: "2nd Date-Majnu ka tila",
     date: "September 2022",
     image: "/img/2022/last/IMG20220906203630.jpg",
-    story: "This was the day everything began. A simple message that changed our lives forever. I never imagined that one conversation could lead to the most beautiful love story.",
-    emoji: "💌"
+    story: "Uss time pe jldi niklna bhi tha but still ek aur metro to jaane de hi skta tha , chlo ek aur lelo, chl ab yeh pakka last ha!! Kabhi usse pehle randomly kisi known tak ko nhi bola tha ki ek photo click krta hu achi ya ache lg rhe ho ",
+    emoji: "📸"
   },
   {
     id: "2",

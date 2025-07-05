@@ -74,18 +74,18 @@ export const loveStoryData: LoveStoryMoment[] = [
   },
   {
     id: "8",
-    title: "April Memories",
+    title: "Project: Dilli meri jaan 🥰",
     date: "April 2023",
     image: "/img/2023/1st/IMG20230425205655.jpg",
-    story: "The beauty of April was magnified by your presence. Every sunset, every smile, every moment with you was magical.",
-    emoji: "🌅"
+    story: "Arre sharma kaahe rhe ho 🥰, kaha gya hmara Ouu project re sasura , dw me reel nhi , real ki baat kr rha hu ki har cheez bc hum dono ko explore krni hi hai chahe bhawan ho, yeh ho wo ,wo passion ki tere saath mujhe sab explore Krna hai usse pyaar hai hume ❤️❤️",
+    emoji: "🏃🏽"
   },
   {
     id: "9",
     title: "Project: Dilli meri jaan 🥰",
     date: "April 2023",
     image: "/img/2023/1st/IMG20230428220311.jpg",
-    story: "Arre sharma kaahe rhe ho 🥰, kaha gya hmara Ouu project re sasura , dw me reel nhi , real ki baat kr rha hu ki har cheez bc hum dono ko explore krni hi hai chahe bhawan ho, yeh ho wo ,wo passion ki tere saath mujhe sab explore Krna hai usse pyaar hai hume ❤️❤️",
+    story: "",
     emoji: "🏃🏽"
   },
   {
@@ -98,7 +98,7 @@ export const loveStoryData: LoveStoryMoment[] = [
   },
   {
     id: "11",
-    title: "CP kya pyaar",
+    title: "",
     date: "May 2023",
     image: "/img/2023/1st/IMG-20230514-WA0012.jpeg",
     story: "Me apne bachpan me CP itna nhi giya jitna ab harr kona naam liya just cuz hmare beech me wo pdta tha to kuch bhi tera har baar backup me yeh rehta hi tha plan , kuch nhi chlo cp , 10 minute hai chlo cp , late hai chlo KFC 🥰🥰🥰.",

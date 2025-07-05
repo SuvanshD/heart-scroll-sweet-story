@@ -82,42 +82,42 @@ export const loveStoryData: LoveStoryMoment[] = [
   },
   {
     id: "9",
-    title: "Project: Dilli meri jaan 🥰",
+    title: "CP Ka Pyaar",
     date: "April 2023",
     image: "/img/2023/1st/IMG20230428220311.jpg",
-    story: "",
-    emoji: "🏃🏽"
-  },
-  {
-    id: "10",
-    title: "May Sunshine",
-    date: "May 2023",
-    image: "/img/2023/1st/20230505_064027.jpg",
-    story: "May brought sunshine and your beautiful smile brightened every day. You were my ray of sunshine in every moment.",
-    emoji: "☀️"
-  },
-  {
-    id: "11",
-    title: "",
-    date: "May 2023",
-    image: "/img/2023/1st/IMG-20230514-WA0012.jpeg",
     story: "Me apne bachpan me CP itna nhi giya jitna ab harr kona naam liya just cuz hmare beech me wo pdta tha to kuch bhi tera har baar backup me yeh rehta hi tha plan , kuch nhi chlo cp , 10 minute hai chlo cp , late hai chlo KFC 🥰🥰🥰.",
     emoji: "🚇"
   },
   {
-    id: "12",
+    id: "10",
     title: "Iskon, Jama Masjid",
-    date: "June 2023",
-    image: "/img/2023/1st/IMG20230617175951.jpg",
+    date: "May 2023",
+    image: "/img/2023/1st/20230505_064027.jpg",
     story: "Ab saari cheez hypothetically aap hi thodi sochte ho thoda unsafe bakchodiya to hum bhi krdete hai , tu bc meri papa ke baad pehli acc insaan thi jo bethi thi scooty pe aur chl padi mullo ke beech 😂😂",
     emoji: "🛕"
+  },
+  {
+    id: "11",
+    title: "Online meet",
+    date: "May 2023",
+    image: "/img/2023/1st/IMG-20230514-WA0012.jpeg",
+    story: "Har baar involved rehna , ki kuch nhi hota aise nhi to wese to mil hi skte hai, meri har random fuckall idea me trust Krna aur jhelna. Raat ko random gaane pe naachna pagal Panti Krna and most importantly mujhe push Krna coding ke liye uske liye thank youuuu 😘😘",
+    emoji: "🚇"
+  },
+  {
+    id: "12",
+    title: "",
+    date: "June 2023",
+    image: "/img/2023/1st/IMG20230617175951.jpg",
+    story: "",
+    emoji: ""
   },
   {
     id: "13",
     title: "Online meet",
     date: "June 2023",
     image: "/img/2023/last/IMG20230621181357.jpg",
-    story: "Har baar involved rehna , ki kuch nhi hota aise nhi to wese to mil hi skte hai, meri har random fuckall idea me trust Krna aur jhelna. Raat ko random gaane pe naachna pagal Panti Krna and most importantly mujhe push Krna coding ke liye uske liye thank youuuu 😘😘",
+    story: "",
     emoji: "💻"
   },
   {

@@ -106,27 +106,27 @@ export const loveStoryData: LoveStoryMoment[] = [
   },
   {
     id: "12",
-    title: "",
+    title: "Tere liye smile paglu bna",
     date: "June 2023",
     image: "/img/2023/1st/IMG20230617175951.jpg",
-    story: "",
-    emoji: ""
+    story: "Zindagi me ek mission bna liya teri har ek smile ko capture krke rkhna (So that baad me tere gussa hote time kya pta dekhne mile na mile :)",
+    emoji: "🥰"
   },
   {
     id: "13",
-    title: "Online meet",
+    title: "Dharmic sanskriti ko apnana",
     date: "June 2023",
     image: "/img/2023/last/IMG20230621181357.jpg",
-    story: "",
-    emoji: "💻"
+    story: "shuru se gharwalo ko bolna ki me dharmic nahi hu but teri internship lgte hai bcc chlo hanuman mandir ki bas tujhe protection mile unse ",
+    emoji: "🏵️"
   },
   {
     id: "14",
-    title: "June Love",
+    title: "Pehli baar haath hold krna ke journey",
     date: "June 2023",
     image: "/img/2023/last/IMG_20230601_203326_513.jpg",
-    story: "June was a month of pure love and happiness. Every day with you was a gift I cherished deeply.",
-    emoji: "💕"
+    story: "Koshish to majnu ka tilla se hit hi par koi na pehli baar aapke modern art museum me hi ringa ringa roses kheliya se leke ab ki autmoatically defined hai kab kis way se kab haath pakadna hai 😂",
+    emoji: "🫱🏽‍🫲🏽"
   },
   {
     id: "16",

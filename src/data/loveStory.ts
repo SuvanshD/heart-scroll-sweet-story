@@ -27,7 +27,7 @@ export const loveStoryData: LoveStoryMoment[] = [
     title: "Our First Party",
     date: "October 2022",
     image: "/img/2022/last/IMG20221013224432.jpg",
-    story: "I still remember wo karwachauth ka din tha and me still nikl.hi gya tha, bc jo pi thi humne ek dum behosh chhat ki seediyo pe bethe the kya bola aajtak nhi pta lekin yeh ache se yaad hai ki "Giana tu theeke na?" 🥰",
+    story: "I still remember wo karwachauth ka din tha and me still nikl.hi gya tha, bc jo pi thi humne ek dum behosh chhat ki seediyo pe bethe the kya bola aajtak nhi pta lekin yeh ache se yaad hai ki, Giana tu theeke na? 🥰",
     emoji: "🍻"
   },
   {

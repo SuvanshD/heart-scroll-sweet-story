@@ -57,7 +57,7 @@ export const loveStoryData: LoveStoryMoment[] = [
     emoji: "🌸"
   },
   {
-    id: "6"
+    id: "6",
     title: "Special Cardddd",
     date: "April 2023",
     image: "/img/2023/1st/IMG20230421112307.jpg",

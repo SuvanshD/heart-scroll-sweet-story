@@ -1,19 +1,20 @@
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import LandingScreen from '@/components/LandingScreen';
 import Timeline from '@/components/Timeline';
 import MusicToggle from '@/components/MusicToggle';
+import BackToTop from '@/components/BackToTop';
+import ProgressBar from '@/components/ProgressBar';
+import CherryBlossoms from '@/components/CherryBlossoms';
 import { useAudioManager } from '@/hooks/useAudioManager';
 
 const Index = () => {
   const [showTimeline, setShowTimeline] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
   const { 
     audioState, 
     backgroundAudioRef, 
-    timelineAudioRef, 
     playBackgroundMusic, 
-    playTimelineTrack, 
-    returnToBackground, 
     toggleMusic 
   } = useAudioManager();
 
@@ -32,30 +33,41 @@ const Index = () => {
     }, 100);
   };
 
+  // Track scroll progress
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      const progress = scrollTop / (documentHeight - windowHeight);
+      setScrollProgress(progress);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <div className="min-h-screen">
-      {/* Background music */}
+      {/* Background music - Madhubala by Amit Trivedi */}
       <audio ref={backgroundAudioRef} loop>
-        <source src="https://www.soundjay.com/misc/sounds/romantic-piano.mp3" type="audio/mpeg" />
-        <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mpeg" />
+        <source src="/madhubala.mp3" type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
 
-      {/* Timeline-specific audio */}
-      <audio 
-        ref={timelineAudioRef}
-        onEnded={returnToBackground}
-      />
+      {/* Progress bar */}
+      <ProgressBar scrollProgress={scrollProgress} />
+
+      {/* Cherry blossoms */}
+      <CherryBlossoms />
 
       <LandingScreen onStart={handleStart} />
       
       {showTimeline && (
         <>
-          <Timeline 
-            onTrackChange={playTimelineTrack}
-            onTrackEnd={returnToBackground}
-          />
+          <Timeline />
           <MusicToggle isPlaying={audioState.isPlaying} onToggle={toggleMusic} />
+          <BackToTop />
         </>
       )}
     </div>

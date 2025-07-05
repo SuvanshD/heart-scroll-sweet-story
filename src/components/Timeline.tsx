@@ -5,14 +5,12 @@ import TimelineCard from './TimelineCard';
 import FloatingHeart from './FloatingHeart';
 
 interface TimelineProps {
-  onTrackChange: (trackUrl: string) => void;
-  onTrackEnd: () => void;
+  // Audio functionality removed - only background music now
 }
 
-const Timeline = ({ onTrackChange, onTrackEnd }: TimelineProps) => {
+const Timeline = ({}: TimelineProps) => {
   const [visibleCards, setVisibleCards] = useState<Set<number>>(new Set());
   const [scrollProgress, setScrollProgress] = useState(0);
-  const [activeAudioCard, setActiveAudioCard] = useState<number | null>(null);
   const timelineRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -27,47 +25,39 @@ const Timeline = ({ onTrackChange, onTrackEnd }: TimelineProps) => {
       const progress = scrollTop / (documentHeight - windowHeight);
       setScrollProgress(progress);
 
-      // Check which cards should be visible and handle audio
+      // Check which cards should be visible
       const cards = timelineRef.current.querySelectorAll('[data-card-index]');
       const newVisibleCards = new Set<number>();
-      let newActiveAudioCard: number | null = null;
 
       cards.forEach((card, index) => {
         const rect = card.getBoundingClientRect();
         const isVisible = rect.top < windowHeight * 0.8;
-        const isInCenter = rect.top < windowHeight * 0.5 && rect.bottom > windowHeight * 0.3;
         
         if (isVisible) {
           newVisibleCards.add(index);
         }
-
-        // Check if this card should play its audio track
-        if (isInCenter && loveStoryData[index]?.audioTrack) {
-          newActiveAudioCard = index;
-        }
       });
 
       setVisibleCards(newVisibleCards);
-
-      // Handle audio track changes
-      if (newActiveAudioCard !== activeAudioCard) {
-        if (newActiveAudioCard !== null && loveStoryData[newActiveAudioCard]?.audioTrack) {
-          onTrackChange(loveStoryData[newActiveAudioCard].audioTrack!);
-        } else if (activeAudioCard !== null && newActiveAudioCard === null) {
-          onTrackEnd();
-        }
-        setActiveAudioCard(newActiveAudioCard);
-      }
     };
 
     window.addEventListener('scroll', handleScroll);
     handleScroll(); // Check initial state
 
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [activeAudioCard, onTrackChange, onTrackEnd]);
+  }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-romantic-cream via-romantic-pink to-romantic-soft">
+    <div className="min-h-screen bg-gradient-to-b from-romantic-cream/90 via-romantic-pink/90 to-romantic-soft/90 relative z-10">
+      {/* Subtle background pattern */}
+      <div className="absolute inset-0 opacity-5 z-1">
+        <div className="absolute top-10 left-10 text-romantic-rose text-4xl">💕</div>
+        <div className="absolute top-20 right-20 text-romantic-blush text-3xl">✨</div>
+        <div className="absolute top-40 left-1/4 text-romantic-rose text-2xl">🌸</div>
+        <div className="absolute top-60 right-1/3 text-romantic-blush text-3xl">💖</div>
+        <div className="absolute top-80 left-1/3 text-romantic-rose text-2xl">💕</div>
+        <div className="absolute top-96 right-1/4 text-romantic-blush text-4xl">✨</div>
+      </div>
       <FloatingHeart scrollProgress={scrollProgress} />
       
       <div className="container mx-auto px-4 py-16" ref={timelineRef}>
@@ -90,8 +80,6 @@ const Timeline = ({ onTrackChange, onTrackEnd }: TimelineProps) => {
                 moment={moment} 
                 index={index}
                 isVisible={visibleCards.has(index)}
-                hasAudioTrack={!!moment.audioTrack}
-                isPlayingAudio={activeAudioCard === index}
               />
             </div>
           ))}
@@ -105,14 +93,27 @@ const Timeline = ({ onTrackChange, onTrackEnd }: TimelineProps) => {
         }`}
       >
         <div className="max-w-2xl mx-auto px-6">
-          <h3 className="font-dancing text-3xl md:text-4xl text-romantic-rose mb-6">
+          <div className="mb-8">
+            <div className="text-6xl mb-4">💕</div>
+            <h3 className="font-dancing text-3xl md:text-4xl text-romantic-rose mb-6">
             Forever & Always
           </h3>
-          <p className="font-poppins text-lg text-gray-700 leading-relaxed">
+          </div>
+          <p className="font-poppins text-lg text-gray-700 leading-relaxed mb-8">
             From one message to a million memories, you became my forever. 
             Every day with you is a gift, and I can't wait to create countless more 
             beautiful moments together. I love you endlessly. 💕
           </p>
+          <div className="flex justify-center space-x-4">
+            <div className="text-2xl">💌</div>
+            <div className="text-2xl">✨</div>
+            <div className="text-2xl">😍</div>
+            <div className="text-2xl">❤️</div>
+            <div className="text-2xl">🌿</div>
+            <div className="text-2xl">☀️</div>
+            <div className="text-2xl">🍂</div>
+            <div className="text-2xl">💕</div>
+          </div>
         </div>
       </div>
     </div>

@@ -126,6 +126,22 @@ export default {
 						opacity: '1',
 						transform: 'scale(1)'
 					}
+				},
+				'petal': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(-10px) rotate(0deg)'
+					},
+					'10%': {
+						opacity: '1'
+					},
+					'90%': {
+						opacity: '1'
+					},
+					'100%': {
+						opacity: '0',
+						transform: 'translateY(100vh) rotate(360deg)'
+					}
 				}
 			},
 			animation: {
@@ -133,7 +149,8 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.6s ease-out',
 				'heart-float': 'heart-float 6s ease-in-out infinite',
-				'sparkle': 'sparkle 2s ease-in-out infinite'
+				'sparkle': 'sparkle 2s ease-in-out infinite',
+				'petal': 'petal 8s linear infinite'
 			}
 		}
 	},

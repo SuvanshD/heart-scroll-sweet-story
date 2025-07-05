@@ -41,6 +41,10 @@ const LandingScreen = ({ onStart }: LandingScreenProps) => {
             <span className="text-romantic-blush font-medium">
               Three years of beautiful memories await 💕
             </span>
+            <br />
+            <span className="text-sm text-gray-600 mt-2 block">
+              🎵 Madhubala by Amit Trivedi will play in the background
+            </span>
           </p>
         </div>
 
@@ -48,9 +52,9 @@ const LandingScreen = ({ onStart }: LandingScreenProps) => {
           onClick={onStart}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
-          className="font-poppins text-lg px-8 py-4 bg-romantic-rose hover:bg-romantic-blush text-white rounded-full shadow-lg transform transition-all duration-300 hover:scale-105"
+          className="font-poppins text-lg px-8 py-4 bg-gradient-to-r from-romantic-rose to-romantic-blush hover:from-romantic-blush hover:to-romantic-rose text-white rounded-full shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
         >
-          <Heart className={`mr-2 transition-transform duration-300 ${isHovered ? 'scale-110' : ''}`} size={20} />
+          <Heart className={`mr-2 transition-transform duration-300 ${isHovered ? 'scale-110 animate-pulse' : ''}`} size={20} />
           Can't wait to see! 💖
         </Button>
       </div>

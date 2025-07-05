@@ -1,17 +1,14 @@
 
 import { LoveStoryMoment } from '@/data/loveStory';
 import { Card } from '@/components/ui/card';
-import { Music } from 'lucide-react';
 
 interface TimelineCardProps {
   moment: LoveStoryMoment;
   index: number;
   isVisible: boolean;
-  hasAudioTrack?: boolean;
-  isPlayingAudio?: boolean;
 }
 
-const TimelineCard = ({ moment, index, isVisible, hasAudioTrack, isPlayingAudio }: TimelineCardProps) => {
+const TimelineCard = ({ moment, index, isVisible }: TimelineCardProps) => {
   const isLeft = index % 2 === 0;
 
   return (
@@ -23,26 +20,20 @@ const TimelineCard = ({ moment, index, isVisible, hasAudioTrack, isPlayingAudio 
       }`}
     >
       <div className={`w-full max-w-md ${isLeft ? 'pr-8' : 'pl-8'}`}>
-        <Card className={`bg-white/80 backdrop-blur-sm border-romantic-pink shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden ${
-          isPlayingAudio ? 'ring-2 ring-romantic-rose ring-opacity-50' : ''
-        }`}>
-          <div className="relative">
+        <Card className="bg-white/80 backdrop-blur-sm border-romantic-pink shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden max-w-sm hover:scale-105 group relative z-20">
+          <div className="relative bg-gray-50 p-4">
             <img 
               src={moment.image} 
               alt={moment.title}
-              className="w-full h-48 object-cover"
+              className="w-full max-h-80 object-contain rounded-lg"
               loading="lazy"
             />
-            <div className="absolute top-4 right-4 text-2xl">
+            <div className="absolute top-6 right-6 text-2xl group-hover:scale-110 transition-transform duration-300">
               {moment.emoji}
             </div>
-            {hasAudioTrack && (
-              <div className={`absolute top-4 left-4 transition-all duration-300 ${
-                isPlayingAudio ? 'text-romantic-rose animate-pulse' : 'text-white/70'
-              }`}>
-                <Music size={20} />
-              </div>
-            )}
+            {/* Sparkle effects */}
+            <div className="absolute top-2 left-2 text-pink-300/60 animate-sparkle">✨</div>
+            <div className="absolute bottom-2 right-2 text-pink-300/60 animate-sparkle" style={{ animationDelay: '1s' }}>✨</div>
           </div>
           
           <div className="p-6">

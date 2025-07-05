@@ -24,45 +24,45 @@ export const loveStoryData: LoveStoryMoment[] = [
   },
   {
     id: "2",
-    title: "Our First Date",
+    title: "Our First Party",
     date: "October 2022",
     image: "/img/2022/last/IMG20221013224432.jpg",
-    story: "Under the starlit sky, we talked for hours. Time stood still as I got lost in your eyes and realized I wanted to spend every moment getting to know you better.",
-    emoji: "✨"
+    story: "I still remember wo karwachauth ka din tha and me still nikl.hi gya tha, bc jo pi thi humne ek dum behosh chhat ki seediyo pe bethe the kya bola aajtak nhi pta lekin yeh ache se yaad hai ki "Giana tu theeke na?" 🥰",
+    emoji: "🍻"
   },
   {
     id: "3",
-    title: "Sweet Moments",
-    date: "October 2022",
+    title: "Dhulhan ka pehli baar muh meetha krwana ",
+    date: "28 July 2022",
     image: "/img/2022/last/Snapchat-100555959.jpg",
-    story: "Every Snapchat, every message, every little moment with you made my heart skip a beat. You were becoming my everything.",
-    emoji: "💕"
+    story: "Date ko poora ek din hua nhi ki nhi bas 3 busses badal ke aa gya ki nhi tu mere haath ka to kuch taste kregi hi kregi, aajtak kabhi itna bhagne paseene ka dimaag me nhi aaya jitna, wo yaad hai ki tu specially noida ke liye 10 minute extra nikal ke neeche park me white kurte me aayi thi, ab isse pyaar nhi hoga to kispe hi hoga madam ❤️",
+    emoji: "🚌"
   },
   {
     id: "4",
-    title: "When I Knew",
+    title: "Golden Hour",
     date: "December 2022",
     image: "/img/2022/last/IMG20221213134939.jpg",
-    story: "The moment you laughed at my terrible joke while we were cuddled up watching movies. That's when I knew you were the one who would make every ordinary day feel extraordinary.",
-    emoji: "😍"
+    story: "Golden Hour me photo Lena to bahana tha bas apne andar ke awkward bnde ko jagane ka tha ki bc ab to kiss krde, kuch to bol saale... iss chkr me Friends se saare episode revise krdiye lekin bass koshish jaari thi....",
+    emoji: "💛"
   },
 
   // 2023 - Growing Together
   {
     id: "5",
-    title: "Spring Beginnings",
+    title: "First Time college aana",
     date: "March 2023",
     image: "/img/2023/1st/IMG-20230327-WA0079.jpg",
-    story: "Spring brought new beginnings and our love blossomed like the flowers around us. Every day with you felt like a fresh start.",
+    story: "Kisi tarah himmat jutta ke aa gye ki chlo Kitna hi bda college hoga kya hi hoga, but bccc... but yeh pta tha tu saath hai to chlo koi na yeh bhi dekhlenge bhyiii 😘😘.",
     emoji: "🌸"
   },
   {
     id: "6",
-    title: "April Adventures",
+    title: "Special Cardddd",
     date: "April 2023",
     image: "/img/2023/1st/IMG20230421112307.jpg",
-    story: "April showers brought us closer together. Every adventure, every laugh, every moment with you was pure joy.",
-    emoji: "🌧️"
+    story: "Timeline ke naam pe to dabba gul hai hmara ji , par yeh ache se pta hai iske.peeche effort daalne me bda time invest hua hai and Tera wo Krna hi mere liye alr final output se zyada special tha 💋.",
+    emoji: "💋"
   },
   {
     id: "7",

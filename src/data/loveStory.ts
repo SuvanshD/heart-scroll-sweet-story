@@ -130,18 +130,18 @@ export const loveStoryData: LoveStoryMoment[] = [
   },
   {
     id: "16",
-    title: "Sweet Moments",
+    title: "Aade tere filters ka upyog krna",
     date: "June 2023",
     image: "/img/2023/last/Snapchat-479975895.jpg",
-    story: "Every Snapchat from you made my day brighter. Your smile was contagious and your love was everything I needed.",
+    story: "ab to aise ho gya kuch bhi aada tera filter ho lobc aur photo lo isse, wo dikhawa ki babe me sirf achi photo hi lungaaaa, lundddd lo aur gandi photo jese koi armaan poora kr rha hu barso ka , but ye aage nuclear missile ki tarah use krna ke liye hai (ab yeh nhi pta wo mere pe fatt jaega ya tere par)",
     emoji: "📱"
   },
   {
     id: "17",
-    title: "September Love",
+    title: "Ha isme mujhe aur 5 times zyada pyaar hai",
     date: "September 2023",
     image: "/img/2023/1st/IMG20230908051328.jpg",
-    story: "As the leaves changed colors, our love only grew stronger. You make every season beautiful.",
+    story: "ab jesi bhi bhoot hai hai to meri hi bhooth . Aur mujhe emotions ke basis pe pyaar hai , ispe nhi ki kabhi to aise mask lgake bhoot bna jaaye ya kabhi so ke tandav krti huye kaali maa ki tarah ",
     emoji: "🍂"
   },
   {

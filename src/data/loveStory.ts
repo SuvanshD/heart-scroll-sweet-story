@@ -66,10 +66,10 @@ export const loveStoryData: LoveStoryMoment[] = [
    },
   {
     id: "7",
-    title: "Spring Adventures",
+    title: "sneak out krke pehli drink , cheers 🍻",
     date: "April 2023",
     image: "/img/2023/1st/IMG20230421173126.jpg",
-    story: "Every adventure became more meaningful with you by my side. From hiking trails to quiet moments in nature, you turned every experience into a treasured memory.",
+    story: " Chl bhyi me sprite le aayi , party se vodka bachi hai so hypothetically..... Tera har activity, har pagalpan me mujhe rkhna wo hi to meri win hai kyoki tere saath pagalpan bhi army ka mission hai ki poora Krna hi hai .",
     emoji: "🌿"
   },
   {
@@ -82,11 +82,11 @@ export const loveStoryData: LoveStoryMoment[] = [
   },
   {
     id: "9",
-    title: "April Magic",
+    title: "Project: Dilli meri jaan 🥰",
     date: "April 2023",
     image: "/img/2023/1st/IMG20230428220311.jpg",
-    story: "April nights were filled with your laughter and love. You made every evening feel like a dream come true.",
-    emoji: "🌙"
+    story: "Arre sharma kaahe rhe ho 🥰, kaha gya hmara Ouu project re sasura , dw me reel nhi , real ki baat kr rha hu ki har cheez bc hum dono ko explore krni hi hai chahe bhawan ho, yeh ho wo ,wo passion ki tere saath mujhe sab explore Krna hai usse pyaar hai hume ❤️❤️",
+    emoji: "🏃🏽"
   },
   {
     id: "10",
@@ -98,27 +98,27 @@ export const loveStoryData: LoveStoryMoment[] = [
   },
   {
     id: "11",
-    title: "May Love",
+    title: "CP kya pyaar",
     date: "May 2023",
     image: "/img/2023/1st/IMG-20230514-WA0012.jpeg",
-    story: "May was filled with love and laughter. Every day with you felt like a celebration of our beautiful relationship.",
-    emoji: "💖"
+    story: "Me apne bachpan me CP itna nhi giya jitna ab harr kona naam liya just cuz hmare beech me wo pdta tha to kuch bhi tera har baar backup me yeh rehta hi tha plan , kuch nhi chlo cp , 10 minute hai chlo cp , late hai chlo KFC 🥰🥰🥰.",
+    emoji: "🚇"
   },
   {
     id: "12",
-    title: "Summer Beginnings",
+    title: "Iskon, Jama Masjid",
     date: "June 2023",
     image: "/img/2023/1st/IMG20230617175951.jpg",
-    story: "Summer brought us closer than ever. Every sunset, every laugh, every moment with you felt like pure magic.",
-    emoji: "☀️"
+    story: "Ab saari cheez hypothetically aap hi thodi sochte ho thoda unsafe bakchodiya to hum bhi krdete hai , tu bc meri papa ke baad pehli acc insaan thi jo bethi thi scooty pe aur chl padi mullo ke beech 😂😂",
+    emoji: "🛕"
   },
   {
     id: "13",
-    title: "June Memories",
+    title: "Online meet",
     date: "June 2023",
     image: "/img/2023/last/IMG20230621181357.jpg",
-    story: "June nights were filled with your love and warmth. You made every moment feel like a beautiful dream.",
-    emoji: "🌙"
+    story: "Har baar involved rehna , ki kuch nhi hota aise nhi to wese to mil hi skte hai, meri har random fuckall idea me trust Krna aur jhelna. Raat ko random gaane pe naachna pagal Panti Krna and most importantly mujhe push Krna coding ke liye uske liye thank youuuu 😘😘",
+    emoji: "💻"
   },
   {
     id: "14",

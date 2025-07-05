@@ -149,7 +149,7 @@ export const loveStoryData: LoveStoryMoment[] = [
     title: "September Memories",
     date: "September 2023",
     image: "/img/2023/last/20230929_220443.jpg",
-    story: "September brought us closer than ever. Every moment with you was a treasure I held dear to my heart.",
+    story: "Tere saath har random spontaneous plan bnana ki aaja theatre dekhe, aaja india gate jaye, aaja yaha jaaye jese hum to anaath hai ya hmare maa baap ko smay ka pta nhi , isme bhi har baar mere liye daant khana",
     emoji: "💝"
   },
   {

@@ -57,14 +57,6 @@ export const loveStoryData: LoveStoryMoment[] = [
     emoji: "🌸"
   },
   {
-    id: "6",
-    title: "Special Cardddd",
-    date: "April 2023",
-    image: "/img/2023/1st/IMG20230421112307.jpg",
-    story: "Timeline ke naam pe to dabba gul hai hmara ji , par yeh ache se pta hai iske.peeche effort daalne me bda time invest hua hai and Tera wo Krna hi mere liye alr final output se zyada special tha 💋.",
-    emoji: "💋"
-   },
-  {
     id: "7",
     title: "sneak out krke pehli drink , cheers 🍻",
     date: "April 2023",
